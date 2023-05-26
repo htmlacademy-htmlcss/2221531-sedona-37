@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Денис Питель](https://up.htmlacademy.ru/htmlcss/37/user/2221531).
-* Наставник: `Неизвестно`.
+* Наставник: [Виктор Рыбаков](https://htmlacademy.ru/profile/viktor-rybakov).
 
 ---
 
