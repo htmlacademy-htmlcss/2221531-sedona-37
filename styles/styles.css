@@ -18,12 +18,17 @@
     font-family: "PT Sans", sans-serif;
     font-size: 20px;
     line-height: 24px;
-    color: #000000; 
-    background-color: #ffffff;
+    color: rgba(0, 0, 0, 1);
+    background-color: rgba(255, 255, 255, 1);
+  }
+  .content {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
   }
   .main-header {
-    color: #000000;
-    background-color: #ffffff;
+    color: rgba(0, 0, 0, 1);
+    background-color: rgba(255, 255, 255, 1);
   }
   .navigation-link {
     font-weight: 700;
@@ -33,12 +38,14 @@
     text-decoration: none;
   }
   .button-navigation-link {
+    font-family: inherit;
     font-weight: 700;
     font-size: 16px;
     line-height: 20px;
-    color: #ffffff;
-    background-color: #756157;
+    color: rgba(255, 255, 255, 1);
+    background-color: rgba(117, 97, 87, 1);
     text-decoration: none;
+    text-transform: uppercase;
   }
 
   .main-head {
@@ -53,95 +60,96 @@
     text-align: center;
     font-size: 30px;
     line-height: 36px;
+    text-transform: uppercase;
   }
   .services-text {
     font-weight: 400;
     text-align: center;
     font-size: 22px;
     line-height: 26px;
-    color: #333333;
+    color: rgba(51, 51, 51, 1);
   }
+  /*
+  .services-block {}
+  */
   .services-list {
     text-align: center;
   }
   .services-item-first,
   .services-item-fifth {
-    background-color: #82b3d3;
+    background-color: rgba(130, 179, 211, 1);
   }
   .services-title-first {
     font-weight: 700;
     font-size: 24px;
     line-height: 28px;
-    color: #ffffff;
+    color: rgba(255, 255, 255, 1);
+    text-transform: uppercase;
   }
   .services-explanation-first {
     font-weight: 400;
     font-size: 18px;
     line-height: 21px;
-    color: #ffffff;
+    color: rgba(255, 255, 255, 1);
   }
-  /*
-  .services-item-second {
-    background-color: #83b3d3;
+  .services-item-second,
+  .services-item-fourth {
+    background-color: rgba(131, 179, 211, 0.12);
   }
-  */
   .services-title-second {
     font-weight: 700;
     font-size: 24px;
     line-height: 28px;
-    color: #000000;
+    color: rgba(0, 0, 0, 1);
+    text-transform: uppercase;
   }
   .services-explanation-second {
     font-weight: 400;
     font-size: 18px;
     line-height: 21px;
-    color: #333333;
+    color: rgba(51, 51, 51, 1);
   }
-  /*
   .services-item-third {
-    background-color: #83b3d3;
+    background-color: rgba(131, 179, 211, 0.2);
   }
-  */
   .services-title-third {
     font-weight: 700;
     font-size: 24px;
     line-height: 28px;
-    color: #000000;
+    color: rgba(0, 0, 0, 1);
+    text-transform: uppercase;
   }
   .services-explanation-third {
     font-weight: 400;
     font-size: 18px;
     line-height: 21px;
-    color: #333333;
+    color: rgba(51, 51, 51, 1);
   }
-  /*
-  .services-item-fourth {
-    background-color: #83b3d3;
-  }
-  */
   .services-title-fourth {
     font-weight: 700;
     font-size: 24px;
     line-height: 28px;
-    color: #000000;
+    color: rgba(0, 0, 0, 1);
+    text-transform: uppercase;
   }
   .services-explanation-fourth {
     font-weight: 400;
     font-size: 18px;
     line-height: 21px;
-    color: #333333;
+    color: rgba(51, 51, 51, 1);
   }
   .services-title-fifth {
     font-weight: 700;
     font-size: 24px;
     line-height: 28px;
-    color: #ffffff;
+    color: rgba(255, 255, 255, 1);
+    text-transform: uppercase;
   }
   .services-explanation-fifth {
     font-weight: 400;
     font-size: 18px;
     line-height: 21px;
-    color: #ffffff;
+    color: rgba(255, 255, 255, 1);
   }
   .advantages {
     text-align: center;
@@ -150,25 +158,31 @@
     font-weight: 700;
     font-size: 30px;
     line-height: 36px;
-    color: #000000;
+    color: rgba(0, 0, 0, 1);
+    text-transform: uppercase;
   }
   .advantages-text {
     font-weight: 400;
     font-size: 22px;
     line-height: 26px;
-    color: #333333;
+    color: rgba(51, 51, 51, 1);
+  }
+  .advantages-item-first,
+  .advantages-item-third {
+    background-color: rgba(131, 179, 211, 0.12);
   }
   .advantages-title {
     font-weight: 700;
     font-size: 24px;
     line-height: 28px;
-    color: #000000;
+    color: rgba(0, 0, 0, 1);
+    text-transform: uppercase;
   }
   .advantages-description {
     font-weight: 400;
     font-size: 18px;
     line-height: 21px;
-    color: #333333;
+    color: rgba(51, 51, 51, 1);
   }
   .find-hotel {
     text-align: center;
@@ -177,25 +191,28 @@
     font-weight: 700;
     font-size: 30px;
     line-height: 36px;
-    color: #000000;
+    color: rgba(0, 0, 0, 1);
+    text-transform: uppercase;
   }
   .find-hotel-description {
     font-weight: 400;
     font-size: 22px;
     line-height: 26px;
-    color: #333333;
+    color: rgba(51, 51, 51, 1);
   }
   .button-hotel {
+    font-family: inherit;
     font-weight: 700;
     font-size: 20px;
     line-height: 36px;
-    color: #ffffff;
-    background-color: #756157;
+    color: rgba(255, 255, 255, 1);
+    background-color: rgba(117, 97, 87, 1);
     text-decoration: none;
+    text-transform: uppercase;
   }
   .newslatter {
     text-align: center;
-    background-color: #000000;
+    background-color: rgba(0, 0, 0, 1);
     background-image: url("../images/background-subscription.jpg");
     background-size: 1200px 414.86px;
     background-repeat: no-repeat;
@@ -204,20 +221,25 @@
     font-weight: 700;
     font-size: 30px;
     line-height: 36px;
-    color: #ffffff;
+    color: rgba(255, 255, 255, 1);
+    text-transform: uppercase;
   }
   .newslatter-description {
     font-weight: 400;
     font-size: 22px;
     line-height: 26px;
-    color: #ffffff;
+    color: rgba(255, 255, 255, 1);
   }
-  .button-newslatter-button {
+  .button-newslatter {
+    font-family: inherit;
     font-weight: 700;
     font-size: 20px;
     line-height: 36px;
-    color: #ffffff;
-    background-color: #82B3D3;
+    color: rgba(255, 255, 255, 1);
+    background-color: rgba(130, 179, 211, 1);
+    text-transform: uppercase;
+    padding: 0;
+    border: none;
   }
   .contacts {
     text-align: center;
@@ -226,20 +248,22 @@
     font-weight: 400;
     font-size: 40px;
     line-height: 40px;
-    color: #000000;
+    color: rgba(0, 0, 0, 1);
     text-decoration: none;
+    text-transform: uppercase;
   }
   .appointment {
-    color: #ffffff;
-    background-color: #000000;
+    color: rgba(255, 255, 255, 1);
+    background-color: rgba(0, 0, 0, 1);
     background-image: url("../images/background-catalog.jpg");
-    background-size: 1200px 412px;
+    background-size: cover;
     background-repeat: no-repeat;
   }
   .inner-title {
     font-weight: 700;
     font-size: 60px;
     line-height: 78px;
+    text-transform: uppercase;
   }
   .breadcrumbs-link {
     font-weight: 400;
@@ -257,17 +281,20 @@
     line-height: 23px;
   }
   .form-label {
+    font-family: inherit;
     font-weight: 400;
     font-size: 18px;
     line-height: 24px;
   }
   .button-submit {
-    background-color: #82b3d3;
+    font-family: inherit;
+    background-color: rgba(130, 179, 211, 1);
     font-weight: 700;
     font-size: 16px;
     line-height: 20px;
   }
   .button-reset {
+    font-family: inherit;
     font-weight: 700;
     font-size: 16px;
     line-height: 20px;
@@ -276,72 +303,81 @@
     font-weight: 700;
     font-size: 30px;
     line-height: 36px;
-    color: #000000;
+    color: rgba(0, 0, 0, 1);
   }
   .select-control {
+    font-family: inherit;
     font-weight: 400;
     font-size: 18px;
     line-height: 21px;
-    color: #333333;
+    color: rgba(51, 51, 51, 1);
+  }
+  .product-card-link {
+    text-decoration: none;
   }
   .product-card-title {
     font-weight: 700;
     font-size: 24px;
     line-height: 28px;
-    color: #000000;
-    text-decoration: none;
+    color: rgba(0, 0, 0, 1);
   }
   .hotel {
     font-weight: 400;
     font-size: 18px;
     line-height: 21px;
-    color: #333333;
+    color: rgba(51, 51, 51, 1);
   }
   .product-card-price {
     font-weight: 400;
     font-size: 18px;
     line-height: 21px;
-    color: #333333;
+    color: rgba(51, 51, 51, 1);
   }
-  .product-card-button-button {
+  .button-more {
+    font-family: inherit;
     font-weight: 700;
     font-size: 16px;
     line-height: 20px;
-    color: #ffffff;
-    background-color: #756157;
+    color: rgba(255, 255, 255, 1);
+    background-color: rgba(117, 97, 87, 1);
     text-align: center;
     text-decoration: none;
+    text-transform: uppercase;
   }
-  .button-product-card-button {
+  .button-favorites {
+    font-family: inherit;
     font-weight: 700;
     font-size: 16px;
     line-height: 20px;
-    color: #ffffff;
-    background-color: #82B3D3;
+    color: rgba(255, 255, 255, 1);
+    background-color: rgba(130, 179, 211, 1);
     text-align: center;
+    text-transform: uppercase;
+    padding: 0;
+    border: none;
   }
   .rating {
     font-weight: 400;
     font-size: 16px;
     line-height: 20px;
-    color: #333333;
-    background-color: #f2f2f2;
+    color: rgba(51, 51, 51, 1);
+    background-color: rgba(242, 242, 242, 1);
     text-align: center;
   }
-  .pagination-link-pagination-current {
+  .pagination-link-current {
     font-weight: 700;
     font-size: 20;
     line-height: 36px;
-    color: #000000;
-    background-color: #f2f2f2;
+    color: rgba(0, 0, 0, 1);
+    background-color: rgba(242, 242, 242, 1);
     text-align: center;
   }
   .pagination-link {
     font-weight: 700;
     font-size: 20;
     line-height: 36px;
-    color: #ffffff;
-    background-color: #82B3D3;
+    color: rgba(255, 255, 255, 1);
+    background-color: rgba(130, 179, 211, 1);
     text-align: center;
     text-decoration: none;
   }
@@ -352,11 +388,12 @@
     font-weight: 700;
     font-size: 30px;
     line-height: 36px;
-    color: #000000;
+    color: rgba(0, 0, 0, 1);
+    text-transform: uppercase;
   }
   .catalog-newslatter-description {
     font-weight: 400;
     font-size: 20px;
     line-height: 26px;
-    color: #333333;
+    color: rgba(51, 51, 51, 1);
   }
