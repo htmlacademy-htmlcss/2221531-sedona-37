@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
+    <div class="content">
     <header class="main-header">
       <nav class="navigation">
         <a class="navigation-logo" href="index.html">
@@ -50,32 +51,42 @@
           заслуживающий большего!</p>
           <p class="services-text">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
         <ul class="services-list">
+          <div class="services-block">
           <li class="services-item-first">
             <h3 class="services-title-first">Настоящий городок</h3>
             <p class="services-explanation-first">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
             <img src="images/town.jpg" width="800" height="385" alt="Вид городка">
           </li>
+          </div>
+          <div class="services-block">
           <li class="services-item-second">
             <h3 class="services-title-second">Небольшая
               площадь</h3>
             <p class="services-explanation-second">Все достопримечательности находятся очень близко</p>
           </li>
+          </div>
+          <div class="services-block">
           <li class="services-item-third">
             <h3 class="services-title-third">Красивая
               дорога</h3>
             <p class="services-explanation-third">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
           </li>
+          </div>
+          <div class="services-block">
           <li class="services-item-fourth">
             <h3 class="services-title-fourth">Мало
               туристов</h3>
             <p class="services-explanation-fourth">Большинство едет в Гранд Каньон и толпится там</p>
           </li>
+          </div>
+          <div class="services-block">
           <li class="services-item-fifth">
             <h3 class="services-title-fifth">Там есть
               мост дьявола</h3>
             <p class="services-explanation-fifth">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
             <img  src="images/scenery.jpg" width="800" height="385" alt="Вид моста дьявола">
           </li>
+          </div>
         </ul>
      </section>
       <section class="advantages">
@@ -83,19 +94,19 @@
         <p class="advantages-text">Опытный персонал и качественное обслуживание!</p>
         <h2 class="visually-hidden">Приймущества</h2>
         <ul class="advantages-list">
-          <li class="advantages-item">
+          <li class="advantages-item-first">
             <img src="images/icons/house.svg" width="75" height="72" alt="Дом">
             <h3 class="advantages-title">Жильё</h3>
             <p class="advantages-description">Рекомендуем пожить в настоящем мотеле, 
               всё как в кино!</p>
           </li>
-          <li class="advantages-item">
+          <li class="advantages-item-second">
             <img src="images/icons/food.svg" width="74" height="70" alt="Гамбургер">
             <h3 class="advantages-title">Еда</h3>
             <p class="advantages-description">Всегда заказывайте
               топовый фирменный бургер, вы не разочаруетесь!</p>
           </li>
-          <li class="advantages-item">
+          <li class="advantages-item-third">
             <img src="images/icons/present.svg" width="64" height="76" alt="Подарок">
             <h3 class="advantages-title">Сувениры</h3>
             <p class="advantages-description">Не только китайского, 
@@ -107,7 +118,7 @@
         <h2 class="visually-hidden">Поиск гостиницы</h2>
         <p class="find-hotel-Call">Заинтересовались?</p>
         <p class="find-hotel-description">Укажите предполагаемые даты поездки,и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-        <a href="catalog.html" class="button-hotel">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</a>
+        <a href="catalog.html" class="button-hotel">Поиск гостиницы в Седоне</a>
       </section>
       <section class="newslatter">
         <h2 class="newslatter-title">Подпишитесь на рассылку</h2>
@@ -115,7 +126,7 @@
         <form class="newslatter-form" action="https://echo.htmlacademy.ru/" method="post">
         <input class="field" type="email" name="newslatter-email" placeholder="Ваш e-mail" id="newslatter-email" required>
         <label class="visually-hidden" for="newslatter-email">Электонный адрес</label>
-        <button class="button-newslatter-button" type="submit">Подписаться</button>
+        <button class="button-newslatter" type="submit">Подписаться</button>
         </form>
       </section>
     </main>
@@ -145,5 +156,6 @@
         </a> 
       </section>
     </footer>
+    </div>
   </body>
 </html>
