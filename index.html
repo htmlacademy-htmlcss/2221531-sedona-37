@@ -6,7 +6,8 @@
     <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
-    <div class="content">
+    <div class="sayt-container">
+      <!--Шапка-->
     <header class="main-header">
       <nav class="navigation">
         <a class="navigation-logo" href="index.html">
@@ -33,6 +34,7 @@
             <a class="navigation-link" href="#">
               <img src="images/icons/favorites.svg" width="18" height="18" alt="Избранное">
             </a>
+            <span class="number-favorites">12</span>
             </li>
             <li class="navigation-item">
             <a class="button-navigation-link" href="#">Хочу сюда!</a>
@@ -40,58 +42,60 @@
         </ul>
       </nav>
     </header>
-    <main class="main-index">
+    <!--Мейн-->
+    <main class="main-container main-index">
+      <!--Логотип с фоном-->
       <section class="main-head">
         <h1 class="visually-hidden">Туристический городок SEDONA</h1>
-      <img src="images/welcome.svg" width="458" height="352" alt="Welcome to the gorgeous SEDONA Because the Grand Canyon sucks!">
+      <img class="logo-sedona" src="images/welcome.svg" width="458" height="352" alt="Welcome to the gorgeous SEDONA Because the Grand Canyon sucks!">
       </section>
       <section class="services">
+        <!--Текст 1-->
       <h2 class="visually-hidden">Причины</h2>
       <p class="services-tagline">Седона — небольшой городок в Аризоне,
           заслуживающий большего!</p>
           <p class="services-text">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
+          <!--Причины 1-->
         <ul class="services-list">
-          <div class="services-block">
           <li class="services-item-first">
+            <div class="services-block-fitst">
             <h3 class="services-title-first">Настоящий городок</h3>
             <p class="services-explanation-first">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
             <img src="images/town.jpg" width="800" height="385" alt="Вид городка">
+            </div>
           </li>
-          </div>
-          <div class="services-block">
+          <!--Причины 2-4-->
           <li class="services-item-second">
             <h3 class="services-title-second">Небольшая
               площадь</h3>
             <p class="services-explanation-second">Все достопримечательности находятся очень близко</p>
           </li>
-          </div>
-          <div class="services-block">
           <li class="services-item-third">
             <h3 class="services-title-third">Красивая
               дорога</h3>
             <p class="services-explanation-third">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
           </li>
-          </div>
-          <div class="services-block">
           <li class="services-item-fourth">
             <h3 class="services-title-fourth">Мало
               туристов</h3>
             <p class="services-explanation-fourth">Большинство едет в Гранд Каньон и толпится там</p>
           </li>
-          </div>
-          <div class="services-block">
+          <!--Причины 5-->
           <li class="services-item-fifth">
+            <div class="services-block-fifth">
             <h3 class="services-title-fifth">Там есть
               мост дьявола</h3>
             <p class="services-explanation-fifth">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
             <img  src="images/scenery.jpg" width="800" height="385" alt="Вид моста дьявола">
+            </div>
           </li>
-          </div>
         </ul>
      </section>
+     <!--Тест 2-->
       <section class="advantages">
         <p class="advantages-call">Приезжайте в Седону отдохнуть в комфорте и уюте!</p>
         <p class="advantages-text">Опытный персонал и качественное обслуживание!</p>
+        <!--Приемущества-->
         <h2 class="visually-hidden">Приймущества</h2>
         <ul class="advantages-list">
           <li class="advantages-item-first">
@@ -114,12 +118,14 @@
           </li>
         </ul>
       </section>
+      <!--Поиск гостиницы-->
       <section class="find-hotel">
         <h2 class="visually-hidden">Поиск гостиницы</h2>
         <p class="find-hotel-Call">Заинтересовались?</p>
         <p class="find-hotel-description">Укажите предполагаемые даты поездки,и мы покажем вам лучшие предложения гостиниц в Седоне</p>
         <a href="catalog.html" class="button-hotel">Поиск гостиницы в Седоне</a>
       </section>
+      <!--Рассылка-->
       <section class="newslatter">
         <h2 class="newslatter-title">Подпишитесь на рассылку</h2>
         <p class="newslatter-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
@@ -130,7 +136,9 @@
         </form>
       </section>
     </main>
+    <!--Подвал-->
     <footer class="page-footer">
+      <div class="page-footer-container">
       <section class="contacts">
         <h2 class="visually-hidden">Контакты</h2>
         <ul class="footer-contacts-list">
@@ -156,6 +164,7 @@
         </a> 
       </section>
     </footer>
+      </div>
     </div>
   </body>
 </html>
