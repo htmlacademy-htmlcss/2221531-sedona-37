@@ -6,6 +6,8 @@
         <link rel="stylesheet" href="styles/styles.css">
     </head>
     <body>
+      <div class="sayt-container">
+        <!--Шапка-->
       <header class="main-header">
         <nav class="navigation">
           <a class="navigation-logo" href="index.html">
@@ -32,6 +34,7 @@
               <a class="navigation-link" href="#">
                 <img src="images/icons/favorites.svg" width="18" height="18" alt="Избранное">
               </a>
+              <span class="number-favorites">12</span>
               </li>
               <li class="navigation-item">
               <a class="button-navigation-link" href="#">Хочу сюда!</a>
@@ -39,7 +42,9 @@
           </ul>
         </nav>
       </header>
-          <main class="main-inner">
+      <!--Маин 2-->
+          <main class=".main-container main-inner">
+            <!--Функции-->
             <section class="appointment">
               <h1 class="inner-title">Гостиницы Седоны</h1>
               <ul class="breadcrumbs">
@@ -113,11 +118,13 @@
                 <input type="number" id="number-out" name="number-out" min="0" max="9000" placeholder="до">
                 <label class="form-label" for="number-out">до</label>
               </fieldset>
-                <button class="button-submit" type="submit">Принять</button>
+                <button class="button-submit" type="submit">Применить</button>
                 <button class="button-reset" type="reset">Сбросить</button>
               </form>
             </section>
+            <!--Сортировка-->
             <section>
+              <div class="sorting">
               <h2 class="visually-hidden">Карточки</h2>
               <p class="number-hotels">НАЙДЕНО ГОСТИНИЦ: 38</p>
               <select class="select-control" aria-label="Сортировка">
@@ -127,21 +134,23 @@
               </select>
               <ul class="catalog-card-view">
                 <li>
-              <button class="button button-light" href="#" type="button">
+              <button class="button-light" href="#" type="button">
                 <img src="images/icons/cards.svg" width="16" height="14" alt="Показать карточки">
               </button>
               </li>
               <li>
-              <button class="button button-light" href="#" type="button">
+              <button class="button-light" href="#" type="button">
                 <img src="images/icons/one-card.svg" width="16" height="14" alt="Показать на экране">
               </button>
               </li>
               <li>
-              <button class="button button-light" href="#" type="button">
+              <button class="button-light" href="#" type="button">
                 <img src="images/icons/list-cards.svg" width="16" height="14" alt="Показать список">
               </button>
               </li>
             </ul>
+          </div>
+            <!--Карточки-->
               <ul class="product-card">
               <li class="product-card">
                 <a class="product-card-link" href="product.html">
@@ -150,8 +159,8 @@
                 </a>
                 <p calss="hotel">Гостиница</p>
                 <b class="product-card-price">От 4000 ₽</b>
-                <a class="product-card-button-button" href="#">ПОДРОБНЕЕ</a>
-                <button class="button-product-card-button" type="button">В ИЗБРАННОЕ</button>
+                <a class="button-more" href="#">Подробнее</a>
+                <button class="button-favorites" type="button">В Избранное</button>
                 <span>4 звезды</span>
                 <span class="rating">Рейтинг: 8,5</span>
               </li>
@@ -162,8 +171,8 @@
                 </a>
                 <p calss="hotel">Гостиница</p>
                 <b class="product-card-price">От 5000 ₽</b>
-                <a class="product-card-button-button" href="#">ПОДРОБНЕЕ</a>
-                <button class="button-product-card-button" type="button">В ИЗБРАННОЕ</button>
+                <a class="button-more" href="#">Подробнее</a>
+                <button class="button-favorites" type="button">В Избранное</button>
                 <span>4 звезды</span>
                 <span class="rating">Рейтинг: 8,5</span>
               </li>
@@ -174,8 +183,8 @@
                 </a>
                 <p calss="hotel">Гостиница</p>
                 <b class="product-card-price">От 2500 ₽</b>
-                <a class="product-card-button-button" href="#">ПОДРОБНЕЕ</a>
-                <button class="button-product-card-button" type="button">В ИЗБРАННОЕ</button>
+                <a class="button-more" href="#">Подробнее</a>
+                <button class="button-favorites" type="button">В Избранное</button>
                 <span>3 звезды</span>
                 <span class="rating">Рейтинг: 8,5</span>
               </li>
@@ -186,15 +195,16 @@
                 </a>
                 <p calss="hotel">Гостиница</p>
                 <b class="product-card-price">От 1500 ₽</b>
-                <a class="product-card-button-button" href="#">ПОДРОБНЕЕ</a>
-                <button class="button-product-card-button" type="button">В ИЗБРАННОЕ</button>
+                <a class="button-more" href="#">Подробнее</a>
+                <button class="button-favorites" type="button">В Избранное</button>
                 <span>2 звезды</span>
                 <span class="rating">Рейтинг: 8,5</span>
               </li>
               </ul>
+              <!--Переходы-->
               <ul class="pagination">
                 <li class="pagination-item">
-                  <a class="pagination-link-pagination-current">1</a>
+                  <a class="pagination-link-current">1</a>
                 </li>
                 <li class="pagination-item">
                   <a class="pagination-link" href="#">2</a>
@@ -216,17 +226,20 @@
                 </li>
               </ul>
             </section>
+            <!--Рассылка 2-->
             <section class="catalog-newslatter">
               <h2 class="catalog-newslatter-title">Подпишитесь на рассылку</h2>
               <p class="catalog-newslatter-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
               <form class="newslatter-form" action="https://echo.htmlacademy.ru/" method="post">
               <input class="field" type="email" name="newslatter-email" placeholder="Ваш e-mail" id="newslatter-email" required>
               <label class="visually-hidden" for="newslatter-email">Электонный адрес</label>
-              <button class="button-newslatter-button" type="submit">Подписаться</button>
+              <button class="button-newslatter" type="submit">Подписаться</button>
               </form>
             </section>
           </main>
+          <!--Подвал-->
           <footer class="page-footer">
+            <div class="page-footer-container">
             <section class="contacts">
               <h2 class="visually-hidden">Контакты</h2>
               <ul class="footer-contacts-list">
@@ -251,6 +264,8 @@
                 <img src="images/hrml-academy.svg" width="114.9" height="32.9" alt="htmlacademy">
               </a> 
             </section>
+            </div>
           </footer>
+      </div>
     </body>
 </html>
