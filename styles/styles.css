@@ -44,8 +44,6 @@
   .navigation {
     display: flex;
     justify-content: space-between;
-    width: 1200px;
-    margin: 0 auto;
   }
   .navigation-logo {
     width: 140px;
@@ -98,10 +96,11 @@
 /*Логотип с фоном*/
   .main-head {
     color: inherit;
-    background-color: inherit;
-    background-image: url("../images/background-index-head.jpg");
-    background-size: 1200px 485px;
+    background-color: rgb(179, 171, 171);
+    background-image: url("../images/background-teeth.svg"), url("../images/background-index-head.jpg");
+    background-size: 1200px 57px, cover;
     background-repeat: no-repeat;
+    background-position: bottom, center;
   }
 
   .logo-sedona {
@@ -130,7 +129,11 @@
   }
 /*Причины 1*/
   .services-list {
+    display: flex;
+    flex-wrap: wrap;
     text-align: center;
+    padding: 0;
+    margin: 0 auto;
   }
 
   .services-block-fitst {
@@ -248,6 +251,7 @@
 /*Тест 2*/
   .advantages-call {
     display: flex;
+    justify-content: center;
     margin: 0 auto;
     font-weight: 700;
     font-size: 30px;
@@ -258,6 +262,7 @@
   
   .advantages-text {
     display: flex;
+    justify-content: center;
     margin: 0 auto;
     font-weight: 400;
     font-size: 22px;
@@ -295,6 +300,7 @@
   .find-hotel {
     display: flex;
     flex-direction: column;
+    align-items: center;
     margin: 0 auto;
     text-align: center;
   }
@@ -330,7 +336,7 @@
     flex-direction: column;
     margin: 0 auto;
     text-align: center;
-    background-color: rgba(0, 0, 0, 1);
+    background-color: rgb(179, 171, 171);
     background-image: url("../images/background-subscription.jpg");
     background-size: 1200px 414.86px;
     background-repeat: no-repeat;
@@ -376,6 +382,8 @@
   }
 
   .contacts {
+    display: flex;
+    align-items: center;
     text-align: center;
   }
 
@@ -398,14 +406,13 @@
   }
 /*Функции*/
   .appointment {
-    display: flex;
-    margin: 0 auto;
     color: rgba(255, 255, 255, 1);
-    background-color: rgba(0, 0, 0, 1);
+    background-color: rgb(179, 171, 171);
     background-image: url("../images/background-catalog.jpg");
     background-size: cover;
     background-repeat: no-repeat;
   }
+
   .inner-title {
     font-weight: 700;
     font-size: 60px;
@@ -417,7 +424,15 @@
     font-size: 16px;
     line-height: 21px;
   }
+  .catalog-filter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 70px;
+    padding: 0;
+  }
   .catalog-filter-title {
+    margin-left: auto;
     font-weight: 700;
     font-size: 20px;
     line-height: 24px;
@@ -435,6 +450,7 @@
   }
   .button-submit {
     font-family: inherit;
+    margin-left: 70px;
     background-color: rgba(130, 179, 211, 1);
     font-weight: 700;
     font-size: 16px;
@@ -442,11 +458,20 @@
   }
   .button-reset {
     font-family: inherit;
+    margin-left: 70px;
     font-weight: 700;
     font-size: 16px;
     line-height: 20px;
   }
   /*Сортировка*/
+  .sorting {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 70px;
+    padding: 0;
+  }
+
   .number-hotels {
     font-weight: 700;
     font-size: 30px;
@@ -455,14 +480,28 @@
   }
   .select-control {
     font-family: inherit;
+    margin-left: auto;
     font-weight: 400;
     font-size: 18px;
     line-height: 21px;
     color: rgba(51, 51, 51, 1);
   }
+  .button-light {
+    margin-left: 70px;
+  }
   /*Карточки*/
+  .product-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    padding: 0;
+  }
+
   .product-card-link {
     text-decoration: none;
+    width: 340px;
   }
   .product-card-title {
     font-weight: 700;
