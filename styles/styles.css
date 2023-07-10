@@ -31,6 +31,7 @@
   }
 
   .sayt-container {
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.20);
     margin: 0 auto;
     width: 1200px;
   }
@@ -42,19 +43,26 @@
 
   .navigation {
     display: flex;
-    width: 775px;
+    justify-content: space-between;
+    width: 1200px;
     margin: 0 auto;
+  }
+  .navigation-logo {
+    width: 140px;
+    margin-left: 70px;
   }
 
   .navigation-list {
     margin: 0;
+    margin-left: 70px;
     padding: 0;
-    width: 507px;
+    width: 339px;
   }
 
   .navigation-user {
-    max-width: 268px;
+    width: 268px;
     margin-left: auto;
+    margin-right: 70px;
   }
 
   .navigation-link {
@@ -214,7 +222,9 @@
 /*Причины 5*/
   .services-block-fifth {
     display: flex;
+    flex-direction: row-reverse;
     margin: 0 auto;
+    flex-direction: row-reverse;
   }
 
   .services-title-fifth {
@@ -361,6 +371,8 @@
     display: flex;
     width: 1060px;
     margin: 0 auto;
+    margin-left: 70px;
+    margin-right: 70px;
   }
 
   .contacts {
