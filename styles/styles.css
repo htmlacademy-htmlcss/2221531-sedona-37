@@ -158,16 +158,20 @@
     text-align: center;
     padding: 0;
     margin: 0 auto;
+    margin-top: 21px;
     list-style-type: none;
   }
 
   .services-block-fitst {
-    display: flex;
+    display: grid;
     margin: 0 auto;
+    padding: 85px 103px;
   }
 
   .services-item-first,
   .services-item-fifth {
+    display: flex;
+    margin: 0 auto;
     background-color: rgba(130, 179, 211, 1);
   }
 
@@ -188,7 +192,7 @@
 /*Причины 2-4*/
   .services-item-second,
   .services-item-fourth {
-    display: flex;
+    display: grid;
     justify-content: space-between;
     margin: 0 auto;
     width: 400px;
@@ -211,7 +215,7 @@
   }
 
   .services-item-third {
-    display: flex;
+    display: grid;
     justify-content: space-between;
     margin: 0 auto;
     width: 400px;
@@ -249,10 +253,14 @@
   }
 /*Причины 5*/
   .services-block-fifth {
+    display: grid;
+    margin: 0 auto;
+    padding: 85px 103px;
+  }
+  .services-item-fifth {
     display: flex;
     flex-direction: row-reverse;
     margin: 0 auto;
-    flex-direction: row-reverse;
   }
 
   .services-title-fifth {
