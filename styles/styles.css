@@ -446,7 +446,7 @@
     text-decoration: none;
     text-transform: uppercase;
   }
-/*Рассылка*/
+/*Рассылка---------------------------------------------------------------------------------*/
   .newslatter {
     display: flex;
     flex-direction: column;
@@ -745,27 +745,55 @@
     margin-left: 8px;
     padding: 14px 12px 14px 12px;
   }
-/*-----------------------------------------------------------------------------------------*/
+
   /*Карточки*/
-  .product-card-list {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    align-items: center;
-    flex-wrap: wrap;
-    margin-top: 40px;
-    margin-bottom: 0;
-    margin-left: 0;
-    margin-right: 0;
+  .product-list {
+    display: grid;
+    grid-template-columns: 340px 340px 340px;
+    list-style-type: none;
+    margin: 0 auto;
     padding: 0;
+    gap: 20px;
   }
 
   .product-card {
+    display: grid;
+    grid-template-rows: 300px min-content auto min-content 16px;
+    grid-template-columns: 20px 300px 20px;
+    g
+  }
+
+  .product-card-image {
+    grid-column: 1 / -1;
+  }
+
+  .product-card-link,
+  .hotel,
+  .product-card-price,
+  .button-more,
+  .button-favorites,
+  .four-stars,
+  .rating {
+    grid-column: 2 / 4;
+  }
+
+  .product-card-link {
+    margin-top: 16px;
+    margin-bottom: 0;
+  }
+
+  .hotel,
+  .product-card-price {
+    margin-top: 16px;
+    margin-bottom: 0;
+  }
+
+  /*.product-card {
     margin: 0 auto;
     padding: 0;
-    width: 300px;
+    width: 340px;
     list-style-type: none;
-  }
+  }*/
 
   .product-card-link {
     text-decoration: none;
@@ -897,6 +925,8 @@
     text-align: center;
   }
   .catalog-newslatter-title {
+    margin: 0 auto;
+    padding: 0;
     font-weight: 700;
     font-size: 30px;
     line-height: 36px;
@@ -904,6 +934,10 @@
     text-transform: uppercase;
   }
   .catalog-newslatter-description {
+    margin: 0 auto;
+    padding-top: 20px;
+    padding-left: 100px;
+    padding-right: 100px;
     font-weight: 400;
     font-size: 20px;
     line-height: 26px;
