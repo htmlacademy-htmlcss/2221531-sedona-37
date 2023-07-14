@@ -14,13 +14,13 @@
             <img src="images/logo.svg" width="140" height="70" alt="Логотип Седона">
           </a>
           <ul class="navigation-list">
-            <li class="navigation-item">
+            <li class="navigation-item-list">
               <a class="navigation-link" href="index.html">Главная</a>
               </li>
-              <li class="navigation-item">
+              <li class="navigation-item-list">
               <a class="navigation-link" href="#">О седоне</a>
             </li>
-              <li class="navigation-item">
+              <li class="navigation-item-list">
               <a class="navigation-link">Гостиницы</a>
             </li>
           </ul>
@@ -48,13 +48,15 @@
             <section class="appointment">
               <h1 class="inner-title">Гостиницы Седоны</h1>
               <ul class="breadcrumbs">
-                <li class="breadcrumbs-item">
+                <li class="breadcrumbs-item-index">
                   <a class="breadcrumbs-link" href="index.html">
                     <img src="images/icons/crumbs-home.svg" width="12" height="12" alt="Главная">
                   </a>
                 </li>
-                <!-- <li class="breadcrumbs-item">></li> -->
                 <li class="breadcrumbs-item">
+                  <img src="images/icons/greater-sign.svg" width="6" height="10" alt="Стрелка">
+                </li>
+                <li class="breadcrumbs-item-catalog">
                   <a class="breadcrumbs-link">Гостиницы</a>
                 </li>
               </ul>
@@ -62,25 +64,22 @@
               <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
                 <fieldset class="catalog-filter-group">
                   <legend class="catalog-filter-title">Инфраструктура:</legend>
-                  <ul class="catalog-filter-list">
-                    <li class="catalog-filter-item">
+                  <ul class="catalog-filter-infrastructure">
+                    <li class="catalog-filter-pool">
                   <label class="control">
                     <input class="control-input" type="checkbox" name="Pool">
-      
                     Бассейн
                   </label>
                   </li>
-                  <li class="catalog-filter-item">
+                  <li class="catalog-filter-parking">
                     <label class="control">
                       <input class="control-input" type="checkbox" name="Parking">
-        
                       Парковка
                     </label>
                   </li>
-                  <li class="catalog-filter-item">
+                  <li class="catalog-filter-wifi">
                     <label class="control">
                       <input class="control-input" type="checkbox" name="Wi-Fi">
-        
                       Wi-Fi
                     </label>
                   </li>
@@ -88,25 +87,22 @@
                 </fieldset>
                 <fieldset class="catalog-filter-group">
                 <legend class="catalog-filter-title">Тип жилья:</legend>
-                <ul class="catalog-filter-list">
-                  <li class="catalog-filter-item">
+                <ul class="catalog-filter-housing">
+                  <li class="catalog-filter-hotel">
                     <label class="control">
                       <input class="control-input" type="radio" name="product-group" value="Hotel">
-    
                       Гостиница
                     </label>
                   </li>
-                  <li class="catalog-filter-item">
+                  <li class="catalog-filter-motel">
                     <label class="control">
                       <input class="control-input" type="radio" name="product-group" value="Motel" checked>
-    
                       Мотель
                     </label>
                   </li>
-                  <li class="catalog-filter-item">
+                  <li class="catalog-filter-apartaments">
                     <label class="control">
                       <input class="control-input" type="radio" name="product-group" value="Apartaments">
-    
                       Апартаменты
                     </label>
                   </li>
@@ -119,12 +115,14 @@
                 <input type="number" id="number-out" name="number-out" min="0" max="9000" placeholder="до">
                 <label class="form-label" for="number-out">до</label>
               </fieldset>
+              <div class="appointment-button">
                 <button class="button-submit" type="submit">Применить</button>
                 <button class="button-reset" type="reset">Сбросить</button>
+              </div>
               </form>
             </section>
             <!--Сортировка-->
-            <section>
+            <section class="product-gallery">
               <div class="sorting">
               <h2 class="visually-hidden">Карточки</h2>
               <p class="number-hotels">НАЙДЕНО ГОСТИНИЦ: 38</p>
@@ -135,24 +133,24 @@
               </select>
               <ul class="catalog-card-view">
                 <li>
-              <button class="button-light" href="#" type="button">
+              <button class="button-light-first" href="#" type="button">
                 <img src="images/icons/cards.svg" width="16" height="14" alt="Показать карточки">
               </button>
               </li>
               <li>
-              <button class="button-light" href="#" type="button">
+              <button class="button-light-second" href="#" type="button">
                 <img src="images/icons/one-card.svg" width="16" height="14" alt="Показать на экране">
               </button>
               </li>
               <li>
-              <button class="button-light" href="#" type="button">
+              <button class="button-light-third" href="#" type="button">
                 <img src="images/icons/list-cards.svg" width="16" height="14" alt="Показать список">
               </button>
               </li>
             </ul>
           </div>
             <!--Карточки-->
-              <ul class="product-card">
+              <ul class="product-card-list">
               <li class="product-card">
                 <a class="product-card-link" href="product.html">
                   <img src="images/catalog/pass.jpg" width="300" height="212" alt="Вид из пещеры">
@@ -219,8 +217,8 @@
                 <li class="pagination-item">
                   <a class="pagination-link" href="#">5</a>
                 </li>
-                <li>
-                  <span>...</span>
+                <li class="pagination-item">
+                  <span class="pagination-link-element">...</span>
                 </li>
                 <li class="pagination-item">
                   <a class="pagination-link" href="#">10</a>
@@ -240,7 +238,6 @@
           </main>
           <!--Подвал-->
           <footer class="page-footer">
-            <div class="page-footer-container">
             <section class="contacts">
               <h2 class="visually-hidden">Контакты</h2>
               <ul class="footer-contacts-list">
@@ -265,7 +262,6 @@
                 <img src="images/hrml-academy.svg" width="114.9" height="32.9" alt="htmlacademy">
               </a> 
             </section>
-            </div>
           </footer>
       </div>
     </body>
