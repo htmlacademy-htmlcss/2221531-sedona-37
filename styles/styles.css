@@ -56,6 +56,7 @@
   .navigation {
     display: flex;
     justify-content: space-between;
+    min-height: 64px;
   }
 
   .navigation-logo {
@@ -102,8 +103,11 @@
   }
 
   .number-favorites {
-    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: rgba(125, 181, 79, 1);
+    color: rgba(242, 242, 242, 1);
     border-radius: 50%;
     font-weight: 400;
     font-size: 10px;
@@ -494,7 +498,6 @@
   }
 
   .button-newslatter {
-    padding: 8px 50px;
     font-family: inherit;
     font-weight: 700;
     font-size: 20px;
@@ -502,8 +505,10 @@
     color: rgba(255, 255, 255, 1);
     background-color: rgba(130, 179, 211, 1);
     text-transform: uppercase;
-    padding: 0;
+    padding: 8px 50px;
+    margin: 0 auto;
     border: none;
+    cursor: pointer;
   }
 /*Подвал*/
 
@@ -518,14 +523,19 @@
   .footer-contacts-list {
     display: flex;
     justify-content: space-between;
-    padding: 0 10px;
+    padding: 0;
     width: 142px;
     list-style-type: none;
   }
 
+  .button-vkontakte,
+  .button-telegram,
+  .button-youtube {
+    padding: 10px;
+  }
+
   .contacts-phone {
     margin: 0 auto;
-    padding: 5px 195px 5px 194px;
     width: 620px;
     font-weight: 400;
     font-size: 40px;
@@ -536,8 +546,8 @@
   }
 
   .htmlacademy-link {
-    justify-content: end;
     margin-left: auto;
+    flex-shrink: 0;
     padding: 0;
     width: 140px;
   }
@@ -678,6 +688,7 @@
     border: none;
     border-radius: 4px;
     text-align: center;
+    cursor: pointer;
   }
 
   .button-reset {
@@ -686,11 +697,13 @@
     padding: 8px 50px 8px 50px;
     font-family: inherit;
     color: rgba(255, 255, 255, 1);
+    background: none;
     font-weight: 700;
     font-size: 16px;
     line-height: 20px;
     border: none;
     border-radius: 4px;
+    cursor: pointer;
   }
 
   .product-gallery {
@@ -754,78 +767,43 @@
     display: grid;
     grid-template-columns: 340px 340px 340px;
     list-style-type: none;
-    margin: 0 auto;
+    margin-top: 40px;
+    margin-bottom: 0;
     padding: 0;
     gap: 20px;
   }
-/*---------------------------------------------------------------------------------*/
-  /*.product-card {
-    display: grid;
-    grid-template-rows: 300px min-content auto min-content 16px;
-    grid-template-columns: 20px 300px 20px;
-    g
-  }
-
-  .product-card-image {
-    grid-column: 1 / -1;
-  }
-
-  .product-card-link,
-  .hotel,
-  .product-card-price,
-  .button-more,
-  .button-favorites,
-  .four-stars,
-  .rating {
-    grid-column: 2 / 4;
-  }
-
-  .product-card-link {
-    margin-top: 16px;
-    margin-bottom: 0;
-  }
-
-  .hotel,
-  .product-card-price {
-    margin-top: 16px;
-    margin-bottom: 0;
-  }*/
-
-  /*.product-card {
-    margin: 0 auto;
-    padding: 0;
-    width: 340px;
-    list-style-type: none;
-  }*/
 
   .product-card {
     display: grid;
-    width: 340px;
+    grid-template-columns: 1fr 1fr;
+    width: 300px;
     margin: 0 auto;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding: 20px;
+    gap: 16px;
   }
 
   .product-card-link {
+    grid-column: 1 / -1;
     text-decoration: none;
   }
 
+  .product-card-image{
+    display: block;
+  }
+
   .product-card-title {
+    margin-top: 16px;
+    margin-bottom: 0;
+    padding: 0;
     font-weight: 700;
     font-size: 24px;
     line-height: 28px;
     color: rgba(0, 0, 0, 1);
   }
 
-  .hotel-price{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  .hotel {
     margin: 0 auto;
     padding: 0;
-  }
-
-  .hotel {
     font-weight: 400;
     font-size: 18px;
     line-height: 21px;
@@ -833,6 +811,12 @@
   }
 
   .product-card-price {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    margin: 0 auto;
+    padding: 0;
+    min-width: 140px;
     font-weight: 400;
     font-size: 18px;
     line-height: 21px;
@@ -840,6 +824,7 @@
   }
 
   .button-more {
+    display: inline-block;
     font-family: inherit;
     font-weight: 700;
     font-size: 16px;
@@ -849,9 +834,14 @@
     text-align: center;
     text-decoration: none;
     text-transform: uppercase;
+    padding: 8px 25px;
+    margin: 0 auto;
+    border: none;
+    border-radius: 4px;
   }
 
   .button-favorites {
+    display: inline-block;
     font-family: inherit;
     font-weight: 700;
     font-size: 16px;
@@ -860,8 +850,11 @@
     background-color: rgba(130, 179, 211, 1);
     text-align: center;
     text-transform: uppercase;
-    padding: 0;
+    padding: 8px 25px;
+    margin: 0 auto;
     border: none;
+    border-radius: 4px;
+    cursor: pointer;
   }
 
   .rating {
@@ -870,13 +863,16 @@
     line-height: 20px;
     color: rgba(51, 51, 51, 1);
     background-color: rgba(242, 242, 242, 1);
+    padding: 9px 23px 8px 22px;
     text-align: center;
+    text-transform: uppercase;
+    border-radius: 4px;
   }
-/*---------------------------------------------------------------------------------*/
+
   /*Переходы*/
   .pagination {
     display: flex;
-    align-items: center;
+    align-items: baseline;
     align-self: stretch;
     margin-top: 40px;
     margin-bottom: 0;
