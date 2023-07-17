@@ -111,14 +111,24 @@
               </fieldset>
               <fieldset class="catalog-filter-group">
                 <legend class="catalog-filter-title">Стоимость, ₽:</legend>
-                <div class="price-in">
-                <input type="number" id="number-in" name="number-in" min="0" max="9000" placeholder="от">
+                <div class="range-wrapper-inputs">
+                <input class="range-input" type="number" id="number-in" name="number-in" min="0" max="9000" placeholder="0">
                 <label class="form-label" for="number-in">от</label>
-                </div>
-                <div class="price-out">
-                <input type="number" id="number-out" name="number-out" min="0" max="9000" placeholder="до">
+                <input class="range-input" type="number" id="number-out" name="number-out" min="0" max="9000" placeholder="9000">
                 <label class="form-label" for="number-out">до</label>
                 </div>
+              <div class="range-scale">
+              <div class="range-bar" style="left: 42px; width: 226px">
+              <button class="range-toggle toggle-min">
+                <svg class="range-icon" aria-hidden="true" focusable="false" width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x=".5" width="20" height="20" rx="5" fill="#fff"/></svg>
+                <span class="visually-hidden">Изменить минимальную цену.</span>
+              </button>
+              <button class="range-toggle toggle-max">
+                <svg class="range-icon" aria-hidden="true" focusable="false" width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x=".5" width="20" height="20" rx="5" fill="#fff"/></svg>
+              <span class="visually-hidden">Изменить максимальную цену.</span>
+              </button>
+              </div>
+              </div>
               </fieldset>
               <div class="appointment-button">
                 <button class="button-submit" type="submit">Применить</button>
@@ -139,21 +149,18 @@
               <ul class="catalog-card-view">
                 <li>
               <button class="button-light-first" href="#" type="button">
-                <!--<img src="images/icons/cards.svg" width="16" height="14" alt="Показать карточки">-->
                 <svg class="button-light-icon" aria-hidden="true" focusable="false" width="16" height="14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4 0H0v6h4V0Zm12 0h-4v6h4V0Zm-6 0H6v6h4V0ZM4 8H0v6h4V8Zm12 0h-4v6h4V8Zm-6 0H6v6h4V8Z" fill="#000"/></svg>
                 <span class="visually-hidden">Показать карточки</span>
               </button>
               </li>
               <li>
               <button class="button-light-second" href="#" type="button">
-                <!--<img src="images/icons/one-card.svg" width="16" height="14" alt="Показать на экране">-->
                 <svg class="button-light-icon" aria-hidden="true" focusable="false" width="16" height="14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M16 12H0v2h16v-2ZM14 2v6H2V2h12Zm2-2H0v10h16V0Z" fill="#000"/></svg>
                 <span class="visually-hidden">Показать на экране</span>
               </button>
               </li>
               <li>
               <button class="button-light-third" href="#" type="button">
-                <!--<img src="images/icons/list-cards.svg" width="16" height="14" alt="Показать список">-->
                 <svg class="button-light-icon" aria-hidden="true" focusable="false" width="16" height="14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2 0H0v2h2V0Zm14 0H4v2h12V0ZM2 4H0v2h2V4Zm14 0H4v2h12V4ZM2 8H0v2h2V8Zm14 0H4v2h12V8ZM2 12H0v2h2v-2Zm14 0H4v2h12v-2Z" fill="#000"/></svg>
                 <span class="visually-hidden">Показать список</span>
               </button>
