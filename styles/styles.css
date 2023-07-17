@@ -916,6 +916,28 @@
     text-align: center;
   }
 
+  .range-wrapper-inputs {
+    margin-top: 32px;
+  }
+
+  .range-scale {
+    position: relative;
+    height: 4px;
+    margin-top: 36px;
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 2px;
+  }
+
+  .range-bar {
+    position: absolute;
+    height: 4px;
+    background-color: rgba(255, 255, 255, 1);
+  }
+
+  .range-icon {
+    position: absolute;
+  }
+
   .button-submit {
     padding: 8px 50px 8px 50px;
     font-family: inherit;
