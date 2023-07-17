@@ -42,9 +42,9 @@
   }
 
   .sayt-container {
-    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.20);
     margin: 0 auto;
     width: 1200px;
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.20);
   }
 
 /*Шапка--------------------------------------------------------------------------*/
@@ -116,25 +116,37 @@
   }
 
   .navigation-link {
-    position: relative;
     font-weight: 700;
     text-align: center;
     color: inherit;
     background-color: inherit;
     text-decoration: none;
+    cursor: pointer;
+  }
+
+  .navigation-link:hover {
+    background: none;
   }
 
   .navigation-link-current::before {
     position: absolute;
     right: 20px;
     bottom: 0;
+    left: 20px;
     width: 68px;
     height: 2px;
     background-color: rgba(117, 98, 87, 1);
     content: "";
   }
 
+  .navigation-item {
+    position: relative;
+  }
+
   .number-favorites {
+    position: absolute;
+    top: 10px;
+    left: 18px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -162,7 +174,7 @@
     text-decoration: none;
     text-transform: uppercase;
   }
-
+  /*-----------------------------------------------------------------------------------------------*/
   /*Мейн--------------------------------------------------------------------*/
   .main-container {
     flex-grow: 1;
@@ -610,8 +622,19 @@
     width: 452px;
   }
 
+  .newslatter-form {
+    flex-grow: 1;
+    margin: 0;
+  }
+
   .field {
+    width: 412px;
     font-family: inherit;
+    font-weight: 400;
+    margin: 0;
+    padding: 12px 20px;
+    background-color: rgba(242, 242, 242, 1);
+    border: none;
   }
 
   .button-newslatter {
@@ -626,6 +649,10 @@
     margin: 0 auto;
     border: none;
     cursor: pointer;
+  }
+
+  .button-newslatter:hover {
+    background-color: rgba(104, 162, 202, 1);
   }
 /*Подвал*/
 
@@ -645,10 +672,6 @@
     list-style-type: none;
   }
 
-  /* .footer-contacts-item:hover .contacts-icon {
-    fill: rgba(104, 162, 202, 1);
-  } */
-
   .button-vk,
   .button-tg,
   .button-youtube {
@@ -664,6 +687,14 @@
     bottom: 0;
     margin: auto;
   }
+
+  /*.contacts-icon:hover {
+    fill: rgba(104, 162, 202, 1);
+  }*/
+  
+  /* .footer-contacts-item:hover .contacts-icon {
+    fill: rgba(104, 162, 202, 1);
+  } */
 
   .contacts-phone {
     margin: 0 auto;
@@ -690,6 +721,57 @@
     padding: 0;
     width: 140px;
   }
+
+  /*.modal-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(242, 242, 242, 1);
+  }
+
+  .modal {
+    position: relative;
+    display: flex;
+    margin: auto;
+    padding: 64px 70px;
+    border-radius: 30px;
+    background-color: rgba(255, 255, 255, 1);
+    box-shadow: 0px 25px 50px 0px rgba(0, 0, 0, 0.15);
+  }
+
+  .modal-auth {
+    width: 717px;
+  }
+
+  .modal-close-button {
+    position: absolute;
+    padding: 0;
+    top: 0;
+    right: 0;
+    width: 56px;
+    height: 44px;
+    color: rgba(0, 0, 0, 1);
+    background-color: rgba(242, 242, 242, 1);
+    border: none;
+    background-image: url("../images/close.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+  } 
+
+  .modal-title {
+    margin: 0;
+    margin-bottom: 24px;
+    font-family: "PT Sans", sans-serif;
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 700;
+    color: #000000;
+    text-transform: uppercase;
+  }*/
 
 /*Функции*/
   .appointment {
@@ -747,6 +829,14 @@
     align-items: center;
     margin-top: 40px;
     padding: 0;
+  }
+
+  .range-scale {
+    position: relative;
+    height: 4px;
+    margin-bottom: 16px;
+    background-color: #242424;
+    border-radius: 2px;
   }
 
   .catalog-filter-group {
