@@ -56,12 +56,17 @@
   .navigation {
     display: flex;
     justify-content: space-between;
-    min-height: 64px;
+    /*min-height: 64px;*/
   }
 
   .navigation-logo {
     width: 140px;
     margin-left: 70px;
+    margin-bottom: -6px;
+  }
+
+  .logo-sedona {
+    display: block;
   }
 
   .navigation-list {
@@ -77,6 +82,7 @@
   }
 
   .navigation-item-list {
+    position: relative;
     margin: 0 auto;
     padding: 20px 16px;
   }
@@ -85,7 +91,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /*width: 268px;*/
     margin-top: 0;
     margin-bottom: 0;
     margin-left: auto;
@@ -160,13 +165,21 @@
     height: 20px;
   }
 
+  .navigation-user-link {
+    display: block;
+    width: 20px;
+    height: 20px;
+  }
+
+  .navigation-item-button {
+    margin-left: 20px;
+  }
+
   .button-navigation-link {
     font-family: inherit;
     font-weight: 700;
     font-size: 16px;
     line-height: 20px;
-    margin-left: 20px;
-    margin-right: 0;
     padding: 8px 50px;
     border-radius: 4px;
     color: rgba(255, 255, 255, 1);
@@ -174,6 +187,16 @@
     text-decoration: none;
     text-transform: uppercase;
   }
+
+  .brown-button:hover {
+    background-color: rgba(97, 80, 72, 1);
+  }
+
+  .brown-button:active {
+    color: rgba(255, 255, 255, 0.3);
+    background-color: rgba(117, 97, 87, 1);
+  }
+
   /*-----------------------------------------------------------------------------------------------*/
   /*Мейн--------------------------------------------------------------------*/
   .main-container {
@@ -265,6 +288,7 @@
   }
 
   .services-explanation-first {
+    margin: 0 auto;
     padding-top: 30px;
     padding-bottom: 0;
     font-weight: 400;
@@ -334,8 +358,8 @@
     margin: 0 auto;
     padding-top: 103px;
     padding-bottom: 0;
-    padding-left: 85px;
-    padding-right: 85px;
+    padding-left: 99px;
+    padding-right: 99px;
     font-weight: 700;
     font-size: 24px;
     line-height: 28px;
@@ -374,8 +398,8 @@
     margin: 0 auto;
     padding-top: 103px;
     padding-bottom: 0;
-    padding-left: 85px;
-    padding-right: 85px;
+    padding-left: 110px;
+    padding-right: 110px;
     font-weight: 700;
     font-size: 24px;
     line-height: 28px;
@@ -437,6 +461,7 @@
   }
 
   .services-explanation-fifth {
+    margin: 0 auto;
     padding-top: 30px;
     padding-bottom: 0;
     font-weight: 400;
@@ -617,17 +642,15 @@
     line-height: 26px;
     color: rgba(255, 255, 255, 1);
   }
-  .newslatter-form {
-    margin-top: 54px;
-    width: 452px;
-  }
 
   .newslatter-form {
+    display: flex;
     flex-grow: 1;
-    margin: 0;
+    margin-top: 54px;
   }
 
   .field {
+    display: block;
     width: 412px;
     font-family: inherit;
     font-weight: 400;
@@ -635,9 +658,11 @@
     padding: 12px 20px;
     background-color: rgba(242, 242, 242, 1);
     border: none;
+    border-radius: 4px 0px 0px 4px;
   }
 
   .button-newslatter {
+    display: block;
     font-family: inherit;
     font-weight: 700;
     font-size: 20px;
@@ -648,10 +673,16 @@
     padding: 8px 50px;
     margin: 0 auto;
     border: none;
+    border-radius: 0px 4px 4px 0px;
     cursor: pointer;
   }
 
-  .button-newslatter:hover {
+  .blue-button:hover {
+    background-color: rgba(104, 162, 202, 1);
+  }
+
+  .blue-button:active {
+    color: rgba(255, 255, 255, 0.3);
     background-color: rgba(104, 162, 202, 1);
   }
 /*Подвал*/
@@ -686,15 +717,16 @@
     right: 0;
     bottom: 0;
     margin: auto;
+    fill: rgba(131, 179, 211, 1);
+  }
+  
+  .footer-contacts-item:hover .contacts-icon {
+    fill: rgba(104, 162, 202, 1);
   }
 
-  /*.contacts-icon:hover {
-    fill: rgba(104, 162, 202, 1);
-  }*/
-  
-  /* .footer-contacts-item:hover .contacts-icon {
-    fill: rgba(104, 162, 202, 1);
-  } */
+  .footer-contacts-item:active .contacts-icon {
+    fill: rgba(104, 162, 202, 0.3);
+  }
 
   .contacts-phone {
     margin: 0 auto;
@@ -708,18 +740,37 @@
   }
 
   .contacts-phone:hover {
-    fill: rgba(117, 97, 87, 1);
+    color: rgba(117, 97, 87, 1);
   }
 
-  .contacts-phone:focus {
-    fill: rgba(117, 97, 87, 1);
+  .contacts-phone:active {
+    color: rgba(117, 97, 87, 0.3);
   }
 
   .htmlacademy-link {
+    position: relative;
     margin-left: auto;
     flex-shrink: 0;
     padding: 0;
     width: 140px;
+  }
+
+  .contacts-htmlacademy-link {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    fill: rgba(0, 0, 0, 1);
+  }
+
+  .contacts-htmlacademy-link:hover {
+    fill: rgba(117, 97, 87, 1);
+  }
+
+  .contacts-htmlacademy-link:active {
+    fill: rgba(117, 97, 87, 0.3);
   }
 
   /*.modal-container {
