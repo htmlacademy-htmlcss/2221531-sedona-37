@@ -928,6 +928,81 @@
     list-style-type: none;
   }
 
+  .control {
+    position: relative;
+    display: block;
+    padding-left: 36px;
+  }
+
+  .control-mark {
+    position: absolute;
+    top: 2px;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    background-color: rgba(255, 255, 255, 1);
+    border: none;
+    border-radius: 4px;
+  }
+
+  .control:hover .control-mark {
+    background-color: rgba(255, 255, 255, 0.6);
+  }
+  
+  .control-label:hover {
+    color: rgba(255, 255, 255, 0.6);
+  }
+
+  .control:focus .control-mark {
+    background-color: rgba(255, 255, 255, 1);
+  }
+  
+  .control-label:focus {
+    color: rgba(255, 255, 255, 1);
+  }
+
+  .control:active .control-mark {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+  
+  .control-label:active {
+    color: rgba(255, 255, 255, 0.1);
+  }
+
+  .control-input[type="checkbox"]:checked + .control-mark::before,
+  .control-input[type="checkbox"]:checked + .control-mark::after {
+    position: absolute;
+    top: 9px;
+    left: 4px;
+    width: 12px;
+    height: 2px;
+    background-color: rgba(63, 94, 114, 1);
+    content: "";
+  }
+
+  .control-input[type="checkbox"]:checked + .control-mark::before {
+    transform: rotate(45deg);
+  }
+  
+  .control-input[type="checkbox"]:checked + .control-mark::after {
+    transform: rotate(-45deg);
+  }
+
+  .control-input[type="radio"] + .control-mark {
+    border-radius: 50%;
+  }
+
+  .control-input[type="radio"]:checked + .control-mark::before {
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    width: 8px;
+    height: 8px;
+    background-color: rgba(63, 94, 114, 1);
+    border-radius: 50%;
+    content: "";
+  }
+
   .catalog-filter-parking{
     margin-top: 16px;
     margin-bottom: 0;
@@ -982,12 +1057,46 @@
   }
 
   .range-wrapper-inputs {
+    display: flex;
     margin-top: 32px;
+    gap: 2px;
+  }
+
+  .range-input-one {
+    margin: 0 auto;
+    padding: 12px 20px;
+    background-color: rgba(242, 242, 242, 1);
+    border: none;
+    border-radius: 4px 0px 0px 4px;
+  }
+
+  .range-input-two {
+    margin: 0 auto;
+    padding: 12px 20px;
+    background-color: rgba(242, 242, 242, 1);
+    border: none;
+    border-radius: 0px 4px 4px 0px;
+  }
+
+  .range-input {
+    background: none;
+    border: none;
+  }
+
+  .range-input::-webkit-outer-spin-button,
+  .range-input::-webkit-inner-spin-button {
+    appearance: none;
+    margin: 0;
+}
+
+  .form-label {
+    color: rgba(0, 0, 0, 0.3);
   }
 
   .range-scale {
     position: relative;
     height: 4px;
+    width: 200px;
     margin-top: 36px;
     background-color: rgba(255, 255, 255, 1);
     border-radius: 2px;
@@ -995,8 +1104,9 @@
 
   .range-bar {
     position: absolute;
+    width: 100%;
     height: 4px;
-    background-color: rgba(255, 255, 255, 1);
+    background-color: rgba(255, 255, 255, 0.3)
   }
 
   .range-toggle {
@@ -1019,12 +1129,12 @@
 
   .toggle-min {
     top: -8px;
-    left: -10px;
+    left: -13px;
   }
   
   .toggle-max {
     top: -8px;
-    right: -10px;
+    right: 50px;
   }
 
   .button-submit {
@@ -1054,6 +1164,18 @@
     border: none;
     border-radius: 4px;
     cursor: pointer;
+  }
+
+  .button-reset:hover {
+    color: rgba(255, 255, 255, 0.4);
+  }
+
+  .button-reset:focus {
+    color: rgba(255, 255, 255, 1);
+  }
+
+  .button-reset:active {
+    color: rgba(255, 255, 255, 0.3);
   }
 
   .product-gallery {
@@ -1086,6 +1208,20 @@
     font-size: 18px;
     line-height: 21px;
     color: rgba(51, 51, 51, 1);
+    border: 2px solid var(--forms-elements-1, rgba(229, 229, 229, 1));
+    border-radius: 4px;
+  }
+
+  .select-control:hover {
+    border: 2px solid var(--forms-elements-1, rgba(104, 162, 202, 1));
+  }
+
+  .select-control:focus {
+    border: 2px solid var(--forms-elements-1, rgba(104, 162, 202, 1));
+  }
+
+  .select-control:active {
+    border: 2px solid var(--forms-elements-1, rgba(0, 0, 0, 0.30));
   }
 
   .catalog-card-view {
