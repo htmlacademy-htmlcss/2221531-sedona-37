@@ -118,11 +118,11 @@
                 <legend class="catalog-filter-title">Стоимость, ₽:</legend>
                 <div class="range-wrapper-inputs">
                 <div class="range-input-one">
-                <input class="range-input" type="number" id="number-in" name="number-in" min="0" max="9000" placeholder="0">
+                <input class="range-input" type="number" id="number-in" name="number-in" min="0" max="9000" value="0">
                 <label class="form-label" for="number-in">от</label>
                 </div>
                 <div class="range-input-two">
-                <input class="range-input" type="number" id="number-out" name="number-out" min="0" max="9000" placeholder="9000">
+                <input class="range-input" type="number" id="number-out" name="number-out" min="0" max="9000" value="9000">
                 <label class="form-label" for="number-out">до</label>
                 </div>
                 </div>
@@ -148,11 +148,13 @@
               <div class="sorting">
               <h2 class="visually-hidden">Карточки</h2>
               <p class="number-hotels">НАЙДЕНО ГОСТИНИЦ: 38</p>
+              
               <select class="select-control" aria-label="Сортировка">
                 <option value="popular">Сначала популярное</option>
                 <option value="cheap">Сначала дешёвое</option>
                 <option value="expensive">Сначала дорогое</option>
               </select>
+
               <ul class="catalog-card-view">
                 <li>
               <button class="button-light" href="#" type="button">
@@ -263,7 +265,7 @@
               <h2 class="catalog-newslatter-title">Подпишитесь на рассылку</h2>
               <p class="catalog-newslatter-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
               <form class="newslatter-form" action="https://echo.htmlacademy.ru/" method="post">
-              <input class="field" type="email" name="newslatter-email" placeholder="Ваш e-mail" id="newslatter-email" required>
+              <input class="field" type="email" name="newslatter-email" value="Ваш e-mail" id="newslatter-email" required>
               <label class="visually-hidden" for="newslatter-email">Электонный адрес</label>
               <button class="button-newslatter blue-button" type="submit">Подписаться</button>
               </form>
